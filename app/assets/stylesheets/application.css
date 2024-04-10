@@ -44,6 +44,52 @@ p{
   unicode-bidi: isolate;
 }
 
+table{
+  border-collapse: separate;
+  text-indent: initial;
+  border-spacing: 2px;
+}
+
+thead {
+  display: table-header-group;
+  vertical-align: middle;
+  unicode-bidi: isolate;
+  border-color: inherit;
+}
+
+tr {
+  display: table-row;
+  vertical-align: inherit;
+  unicode-bidi: isolate;
+  border-color: inherit;
+}
+
+th {
+  padding-bottom: 5px;
+}
+
+tbody {
+  display: table-row-group;
+  vertical-align: middle;
+  unicode-bidi: isolate;
+  border-color: inherit;
+}
+
+td {
+  padding-bottom: 7px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+h2 {
+  display: block;
+  font-size: 1.5em;
+  margin: 0.83em 0px;
+  font-weight: bold;
+  unicode-bidi: isolate;
+}
+
+
 .flash-message {
   border-radius: 5px;
   padding: 16px 24px;

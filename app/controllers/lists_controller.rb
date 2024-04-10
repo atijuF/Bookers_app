@@ -1,7 +1,4 @@
 class ListsController < ApplicationController
-  def new
-    @list = List.new
-  end
 
   def create
     @list = List.new(list_params)
@@ -10,12 +7,14 @@ class ListsController < ApplicationController
       redirect_to list_path(@list.id)
     else
       flash.now[:alert] = "投稿に失敗しました。"
-      render :new
+      @lists = List.all
+      render :index
     end
   end
   
   def index
     @lists = List.all
+    @list = List.new
   end
 
   def show
