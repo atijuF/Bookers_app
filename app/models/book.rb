@@ -1,6 +1,4 @@
-class List < ApplicationRecord
-  has_one_attached :image
-  
+class Book < ApplicationRecord
   validates :title, presence: true
   validates :body, presence: true
 end
